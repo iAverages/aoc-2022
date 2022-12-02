@@ -1,5 +1,9 @@
-const DEFAULT_CONTENT = "export {};";
-const day = new Date().getDate();
+const DEFAULT_CONTENT = `export {};
+
+const input = await Deno.readTextFile(new URL("./input.txt", import.meta.url));
+`;
+
+const day = new Date().getDate() + 1;
 
 console.log(`Day ${day}, only ${25 - day} days left.`);
 
