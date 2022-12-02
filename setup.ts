@@ -1,5 +1,5 @@
 const DEFAULT_CONTENT = "export {};";
-const day = new Date().getDate() + 1;
+const day = new Date().getDate();
 
 console.log(`Day ${day}, only ${25 - day} days left.`);
 
